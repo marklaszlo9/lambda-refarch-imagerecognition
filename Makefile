@@ -46,6 +46,7 @@ _install_os_packages:
 	yum install jq -y
 	$(info [*] Upgrading Python SAM CLI and CloudFormation linter to the latest version...)
 	python3 -m pip install --user cfn-lint aws-sam-cli
+	yum install python3-pip -y
 	pip install Jinja2==2.11.1
 
 
