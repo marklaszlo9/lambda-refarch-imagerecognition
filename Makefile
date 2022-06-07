@@ -16,7 +16,7 @@ init: ##=> Install OS deps and dev tools
 
 deploy: ##=> Deploy services
 	$(info [*] Deploying backend...)
-
+	pip install jinja2 && \
 #	cd lambda-functions/thumbnail && npm install && \
 #	cd ../extract-image-metadata && npm install && \
 #	cd ../store-image-metadata && npm install && \
