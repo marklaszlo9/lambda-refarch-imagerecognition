@@ -16,11 +16,10 @@ init: ##=> Install OS deps and dev tools
 
 deploy: ##=> Deploy services
 	$(info [*] Deploying backend...)
-	pip install jinja2 && \
+
 #	cd lambda-functions/thumbnail && npm install && \
 #	cd ../extract-image-metadata && npm install && \
 #	cd ../store-image-metadata && npm install && \
-
 	cd cloudformation/ && \
  	sam build --template ${TEMPLATE_NAME}.serverless.yaml  && \
 	sam package \
@@ -47,6 +46,7 @@ _install_os_packages:
 	yum install jq -y
 	$(info [*] Upgrading Python SAM CLI and CloudFormation linter to the latest version...)
 	python3 -m pip install --upgrade --user cfn-lint aws-sam-cli
+	pip install jinja2 
 
 
 define HELP_MESSAGE
