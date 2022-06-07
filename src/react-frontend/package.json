@@ -16,8 +16,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",
     "semantic-ui-react": "^2.1.2",
-    "uuid": "^8.3.2",
-	"aws-amplify/cache": "4.0.44" 
+    "uuid": "^8.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
