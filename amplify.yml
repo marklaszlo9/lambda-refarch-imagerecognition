@@ -35,7 +35,7 @@ frontend:
     build:
       commands:
         - npm run build
-		- npm i -S @aws-amplify/analytics @aws-amplify/interactions @aws-amplify/storage @aws-amplify/ui @aws-amplify/xr aws-amplify
+		- npm i -S @aws-amplify/analytics @aws-amplify/interactions @aws-amplify/storage @aws-amplify/ui @aws-amplify/xr
 		- echo "hello"
   artifacts:
     baseDirectory: src/react-frontend/build
