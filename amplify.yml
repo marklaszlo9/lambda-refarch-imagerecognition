@@ -31,6 +31,7 @@ frontend:
     preBuild:
       commands:
         - cd src/react-frontend
+		- rm -r ./node_modules/
         - npm install
     build:
       commands:
