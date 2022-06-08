@@ -31,7 +31,6 @@ frontend:
     preBuild:
       commands:
         - cd src/react-frontend
-        - rm -r ./node_modules/
         - npm install
     build:
       commands:
@@ -40,7 +39,3 @@ frontend:
     baseDirectory: src/react-frontend/build
     files:
       - "**/*"
-  cache:
-    paths:
-      - node_modules/**/*
-      - src/react-frontend/node_modules/**/*
